@@ -32,3 +32,6 @@
   If you have any questions, you can reach me via:
   - Github: https://github.com/jkupi
   - Email: jbalakulppi@gmail.com
+
+  ## Link to video
+  https://drive.google.com/file/d/1BHGM8C1O6kWM1KNZJoeZNwQErksZHG2S/view
