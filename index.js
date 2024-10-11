@@ -9,7 +9,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title fo your project?'
+        message: 'What is the title of your project?'
     },
     {
         type: 'input',
@@ -29,13 +29,13 @@ const questions = [
     {
         type: 'input',
         name: 'credits',
-        message: 'List your collaborators and any resources used if any:'
+        message: 'List your collaborators and any resources used:'
     },
     {
         type: 'list',
         name: 'license',
         message: 'Choose a license:',
-        choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'None']
+        choices: ['MIT', 'Apache 2.0', 'Boost Software License 1.0', 'None']
     },
     {
         type: 'input',
@@ -61,7 +61,7 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
     const dir = './output';
-    
+
     if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir);
     }

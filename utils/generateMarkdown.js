@@ -3,6 +3,12 @@
 function renderLicenseBadge(license) {
     if (license === "None") {
         return "";
+    } else if (license === "MIT") {
+        return "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
+    } else if (license === "Apache 2.0") {
+        return "![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)";
+    } else if (license === "Boost Software License 1.0") {
+        return "![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)";
     }
 }
 
@@ -11,6 +17,12 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
     if (license === "None") {
         return "";
+    } else if (license === "MIT") {
+        return "https://opensource.org/licenses/MIT";
+    } else if (license === "Apache-2.0") {
+        return "https://opensource.org/licenses/Apache-2.0";
+    } else if (license === "Boost Software License 1.0") {
+        return "https://www.boost.org/LICENSE_1_0.txt";
     }
 }
 
@@ -21,7 +33,7 @@ function renderLicenseSection(license) {
         return "";
     }
     return `## License
-    This project is licensed under the ${license} license.`
+    This project is licensed under the ${license} license. You can review the full license agreement at the following link: ${renderLicenseLink(license)}`;
 }
 
 // generate markdown content for README
